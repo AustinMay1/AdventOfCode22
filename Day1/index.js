@@ -1,7 +1,5 @@
 const fs = require("fs");
 
-// readfile and convert to an object of arrays
-
 fs.readFile("./input.txt", "utf8", (err, data) => {
   if (err) {
     console.error(err);
@@ -15,5 +13,13 @@ fs.readFile("./input.txt", "utf8", (err, data) => {
       
   });
   calories.sort((a, b) => b - a);
-  console.log(calories);
+  
+  let topThree = 0;
+
+  for(let i = 0; i < 3; i++) {
+    console.log(calories[i]);
+    topThree += calories[i];
+  }
+
+  console.log(topThree);
 });
