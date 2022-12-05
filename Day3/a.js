@@ -4,6 +4,8 @@ const fs = require("fs");
 // Lowercase: 1-26 (e.g. p = 16)
 // Uppercase: 27-52 (e.g. L = 38)
 
+// 'a'.charCodeAt(0) = 97. 97 - 96 = 1 ...bcdefg
+// 'A'.charCodeAt(0) = 65. 65 - 38 = 27 ...BCDEFG
 const calculatePri = (char) => char.charCodeAt(0) - (char === char.toLowerCase() ? 96 : 38);
 
 fs.readFile("./input.txt", "utf-8", (err, data) => {
