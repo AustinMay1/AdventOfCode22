@@ -16,7 +16,6 @@ const findMatch = (s1, s2, s3) => {
 }
 
 const findSumOfGroups = (input) => {
-  counter = 0;
   points = 0;
   let group = [];
   for (const rucksack of input) {
