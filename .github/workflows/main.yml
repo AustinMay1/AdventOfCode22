@@ -5,10 +5,10 @@
   with:
     # Your session code for login. Retrive it from your browser cookies. Make sure you use a secret to not leak this to public.
 
-    session:${{ secrets.AOC_SID }} 
+      session: ${{ secrets.AOC_SID }} 
     # Your unique userid on adventofcode.com, obtain it from **YOUR** private leaderboard url (its the number at the end of the url).
 
-    userid:2565149 
+      userid: 2565149 
     # The year for which the stats should be retrived.  If not speified, the current year (from system time) is used.
 
     year: # optional
