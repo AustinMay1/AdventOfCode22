@@ -22,7 +22,5 @@ const pairs = assignments.map((pair) => {
     return overlap ? 1 : 0;
 });
 
-[2,4] [5,6];
-
 console.log(pairs.reduce((a,b) => a + b, 0));
 
