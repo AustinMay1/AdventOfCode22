@@ -33,7 +33,7 @@ const stacks = {
 };
 
 // go through each instruction and execute pop(amount) from, push(valueOfPop) to
-function move() {
+function crateMover9000() {
   for(const x of crane) {
     for(let i = 0; i < x[0]; i++) {
       const crate = stacks[x[1]].pop();
@@ -43,7 +43,7 @@ function move() {
   console.log(stacks);
 }
 
-move();
+crateMover9000();
 
 
 
